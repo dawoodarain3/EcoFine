@@ -7,7 +7,8 @@ import { IndustriesServed } from "@/components/industries-served"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { HeroSection } from "@/components/hero-section"
 import { SDGSection } from "@/components/sdg-section"
-
+import ecofriendlymain from "@/public/EcoFine Microfiber Cloth/EcoFine Microfiber Cloth - 16 x 16/Blue/Main.png"
+import globalimage from "@/public/Mops/Heavy Duty Frame Handle/01.png"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -37,7 +38,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={ecofriendlymain}
                 alt="EcoFine Products Factory"
                 width={600}
                 height={400}
@@ -249,7 +250,7 @@ export default function Home() {
 
       {/* Global Presence */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Global Presence</h2>
@@ -257,14 +258,16 @@ export default function Home() {
                 Supplying Premium Cleaning Solutions Worldwide
               </p>
             </div>
-            <div className="w-full max-w-4xl mt-8">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Global Map"
-                width={800}
-                height={400}
-                className="rounded-lg object-cover"
-              />
+            <div className="w-full max-w-4xl mt-8 flex flex-col items-center">
+              <div className="w-full flex justify-center">
+                <Image
+                  src={globalimage}
+                  alt="Global Map"
+                  width={800}
+                  height={400}
+                  className="rounded-lg object-contain max-w-full h-auto"
+                />
+              </div>
               <div className="flex flex-wrap justify-center gap-4 mt-8">
                 <div className="flex items-center gap-2">
                   <Globe className="h-5 w-5 text-green-600" />
@@ -310,7 +313,7 @@ export default function Home() {
               <Button asChild className="bg-white text-green-600 hover:bg-green-50">
                 <Link href="/catalog">Download Catalog</Link>
               </Button>
-              <Button asChild variant="outline" className="border-white text-white hover:bg-green-700">
+              <Button asChild variant="outline" className="border-white text-green-600 hover:bg-green-700">
                 <Link href="/contact">Become a Distributor</Link>
               </Button>
             </div>

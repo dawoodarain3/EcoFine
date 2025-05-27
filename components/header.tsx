@@ -8,7 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Menu, ChevronDown } from "lucide-react"
 import { EmailSubscriptionPopup } from "@/components/email-subscription-popup"
-
+import logogreen from "@/public/logogreen.jpeg"
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [showPopup, setShowPopup] = useState(false)
@@ -119,10 +119,10 @@ export function Header() {
         <div className="container flex h-16 items-center px-4 md:px-6">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg?height=40&width=40"
+              src={logogreen}
               alt="EcoFine Products Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="rounded"
             />
             <div>

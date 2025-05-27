@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-
+import microfibermain from "@/public/Mops/Microfiber Flat Mop Pads - 18/Blue/bgremove.png"
 export function HeroSection() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-green-50">
@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/placeholder.svg?height=550&width=550"
+              src= {microfibermain}
               alt="Eco-friendly cleaning products"
               width={550}
               height={550}

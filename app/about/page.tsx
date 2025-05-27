@@ -3,7 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Award, CheckCircle, Recycle, Shield } from "lucide-react"
-
+import aboutmainimage from "@/public/mopsbgremove.png"
 export default function AboutPage() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -23,7 +23,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={aboutmainimage}
                 alt="EcoFine Products Factory"
                 width={600}
                 height={400}
@@ -291,7 +291,7 @@ export default function AboutPage() {
               <Button asChild className="bg-white text-green-600 hover:bg-green-50">
                 <Link href="/contact">Request a Catalog</Link>
               </Button>
-              <Button asChild variant="outline" className="border-white text-white hover:bg-green-700">
+              <Button asChild variant="outline" className="border-white text-green-600 hover:bg-green-700">
                 <Link href="/contact">Become a Distributor</Link>
               </Button>
             </div>

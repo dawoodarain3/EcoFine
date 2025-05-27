@@ -3,7 +3,9 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Mail, Phone, MapPin, Clock, Download, Calendar, MessageSquare } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Download, Calendar, MessageSquare, Globe } from "lucide-react"
+import globalimage from "@/public/Mops/Heavy Duty Frame Handle/01.png"
+import contactusimage from "@/public/contactus.png"
 
 export default function ContactPage() {
   return (
@@ -24,7 +26,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src={contactusimage}
                 alt="Contact us"
                 width={600}
                 height={400}
@@ -526,7 +528,7 @@ export default function ContactPage() {
 
       {/* Global Presence */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Global Presence</h2>
@@ -534,38 +536,40 @@ export default function ContactPage() {
                 Supplying Premium Cleaning Solutions Worldwide
               </p>
             </div>
-            <div className="w-full max-w-4xl mt-8">
-              <Image
-                src="/placeholder.svg?height=400&width=800"
-                alt="Global Map"
-                width={800}
-                height={400}
-                className="rounded-lg object-cover"
-              />
+            <div className="w-full max-w-4xl mt-8 flex flex-col items-center">
+              <div className="w-full flex justify-center">
+                <Image
+                  src={globalimage}
+                  alt="Global Map"
+                  width={800}
+                  height={400}
+                  className="rounded-lg object-contain max-w-full h-auto"
+                />
+              </div>
               <div className="flex flex-wrap justify-center gap-4 mt-8">
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">USA</span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">Canada</span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">Germany</span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">France</span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">Italy</span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-green-600" />
                   <span className="text-sm font-medium">UK</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium">UAE</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-medium">Saudi Arabia</span>
                 </div>
               </div>
             </div>
