@@ -174,8 +174,9 @@ export default function WetMopPadsPage() {
                   <span className="text-sm text-gray-500 ml-2">Pack of 6</span>
                 </div>
                 <p className="text-gray-600">
-                  High-performance microfiber wet mop pads designed for professional cleaning environments. 
-                  Ultra-absorbent 300 GSM material provides superior cleaning power and durability.
+                  Professional-grade 470 GSM microfiber wet mop pad with innovative foam backing and 
+                  hook and loop attachment system. Designed for superior cleaning performance and 
+                  durability in commercial and residential applications.
                 </p>
               </div>
 
@@ -275,7 +276,7 @@ export default function WetMopPadsPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
-                    <span>Ultra-absorbent microfiber material (300 GSM)</span>
+                    <span>Ultra-absorbent microfiber material (470 GSM)</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="h-5 w-5 text-green-600 mr-2 mt-0.5" />
@@ -347,7 +348,7 @@ export default function WetMopPadsPage() {
                       </div>
                       <div className="flex justify-between py-2 border-b">
                         <span className="font-medium">Weight</span>
-                        <span>300 GSM</span>
+                        <span>470 GSM</span>
                       </div>
                       <div className="flex justify-between py-2 border-b">
                         <span className="font-medium">Available Sizes</span>

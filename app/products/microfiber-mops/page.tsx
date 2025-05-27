@@ -4,85 +4,79 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronRight, Check } from "lucide-react"
 import { ColorCodingGuide } from "@/components/color-coding-guide"
-
+import flatmopmain from "../../../public/Mops/Microfiber Flat Mop Pads - 18/Blue/Main.png"
+import wetmoppods from "../../../public/Microfiber Wet Mop Pads/Main.png"
+import HeavyDutyFrameMain from "../../../public/Mops/Heavy Duty Frame Handle/01.png"
+import scrubbermopmain from "@/public/Mops/Microfiber Scrubber Mop Pad/18/Main.png"
+import commercialtubemop from "@/public/Mops/Commercial Tube Mop/Blue/Main.png"
+import stringmop from "@/public/Mops/String Mop/Main.png"
 export default function MicrofiberMopsPage() {
   const products = [
     {
       id: 1,
-      name: 'Microfiber Flat Mop Pads - 18" - Pack of 3',
-      description: "Professional-grade microfiber mop pads for efficient cleaning",
+      name: 'EcoFine Microfiber Flat Mop Pads - 18"',
+      description: "Professional-grade 475 GSM microfiber mop pads with longer loops for superior cleaning",
       price: "$29.98",
-      packSize: "Pack of 3",
-      colors: "Red, Blue, Green, Yellow",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-mops/flat-mop-pads-18-3pack",
-      badges: ["Professional", "Color-Coded"],
+      packSize: "Pack of 3 & 6 available",
+      colors: "Red, Blue, Green, White, Yellow",
+      image: flatmopmain,
+      href: "/products/microfiber-mops/flat-mop-pads-18",
+      badges: ["Professional", "Color-Coded", "Multiple Packs"],
     },
     {
       id: 2,
-      name: 'Microfiber Flat Mop Pads - 18" - Pack of 6',
-      description: "Professional-grade microfiber mop pads for efficient cleaning",
-      price: "$54.98",
-      packSize: "Pack of 6",
-      colors: "Red, Blue, Green, Yellow",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-mops/flat-mop-pads-18-6pack",
-      badges: ["Value Pack", "Color-Coded"],
+      name: 'X-Large Microfiber String Mop',
+      description: "20 oz X-Large string mop equivalent to 32 oz cotton with superior absorption",
+      price: "$24.99",
+      packSize: "Each",
+      colors: ['Blue', 'White'],
+      image: stringmop,
+      href: "/products/microfiber-mops/x-large-string-mop",
+      badges: ["X-Large", "20 Ounce", "String Mop"],
     },
     {
       id: 3,
-      name: 'Premium Microfiber Wet Mop Pads - 18" - Pack of 6',
-      description: "475 GSM microfiber mop pads with longer loops for superior cleaning",
-      price: "$64.98",
-      packSize: "Pack of 6",
-      colors: "Red, Blue, Green, Yellow",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-mops/premium-wet-mop-pads-18-6pack",
-      badges: ["Premium", "High GSM"],
-    },
-    {
-      id: 4,
       name: "Premium Microfiber Wet Mop Pad",
       description: "470 GSM microfiber mop pad with foam backing and hook and loop attachment",
       price: "$13.98",
       packSize: "Each",
       colors: "Light Blue/Medium Blue",
-      image: "/placeholder.svg?height=400&width=400",
+      image: wetmoppods,
       href: "/products/microfiber-mops/premium-wet-mop-pad",
       badges: ["Premium", "Foam Backing"],
     },
     {
-      id: 5,
+      id: 4,
       name: '18" Heavy Duty Frame & Handle',
       description: "Aluminum frame with high-impact plastic and telescoping handle",
       price: "$19.98",
       packSize: "Each",
-      image: "/placeholder.svg?height=400&width=400",
+      image: HeavyDutyFrameMain,
       href: "/products/microfiber-mops/heavy-duty-frame-handle",
       badges: ["Hardware", "Durable"],
     },
     {
-      id: 6,
-      name: '18" Microfiber Scrubber Mop',
+      id: 5,
+      name: 'Ecofine Microfiber Scrubber Mop',
       description: "Dual-action mop with scrubbing strips for tough cleaning jobs",
       price: "$14.98",
       packSize: "Each",
       sizes: ['18"', '20"', '24"'],
-      image: "/placeholder.svg?height=400&width=400",
+      image: scrubbermopmain,
       href: "/products/microfiber-mops/scrubber-mop",
       badges: ["Scrubbing", "Dual-Action"],
     },
     {
-      id: 7,
-      name: '18" Microfiber Mop System',
-      description: "Complete mop system with telescoping handle, frame, and pads",
-      price: "$49.98",
-      packSize: "Set",
-      components: "1 Telescoping Handle, 1 Heavy Duty Frame, 2 Wet Mop Pads, 1 Dust Mop Pad",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-mops/mop-system",
-      badges: ["Complete System", "Professional"],
-    },
+      id: 6,
+      name: 'Commercial Microfiber Tube Mop',
+      description: "Professional tube mop with mesh headband for commercial wet cleaning",
+      price: "$89.99",
+      packSize: "Case of 12",
+      colors: ['Blue', 'Green', 'Yellow', 'Red'],
+      image: commercialtubemop,
+      href: "/products/microfiber-mops/commercial-tube-mop",
+      badges: ["Commercial", "Mesh Headband"],
+    }
   ]
 
   return (

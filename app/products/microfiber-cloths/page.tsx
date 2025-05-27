@@ -7,7 +7,9 @@ import { ColorCodingGuide } from "@/components/color-coding-guide"
 import microfiberclothmain  from "../../../public/EcoFine Microfiber Cloth/Microfiber 16x16-300gsm-50packs/Blue/Main.png"
 import glasscleaningmain from "../../../public/Glass Cleaning Microfiber/Main.png"
 import suedelensmain from "../../../public/Microfiber Suede Lens Cleaning Cloth/Gray/Main.png"
-
+import microfiber16x16main from "../../../public/EcoFine Microfiber Cloth/EcoFine Microfiber Cloth - 16 x 16/Blue/Main.png"
+import microfiber12x12main from "../../../public/EcoFine Microfiber Cloth/Microfiber 12X12 320GSM- 12packs/Black/Main.png"
+import microfiber12x12_300main from "../../../public/EcoFine Microfiber Cloth/Microfiber Cloth - 12x12 300gsm-50packs/Blue/Main.png"
 export default function MicrofiberClothsPage() {
   const products = [
     {
@@ -17,7 +19,7 @@ export default function MicrofiberClothsPage() {
       price: "$24.99",
       packSize: "Pack of 12",
       colors: "Blue, Green, Yellow, Red, Purple, Pink, Orange, Black, White, and Gray",
-      image: "/placeholder.svg?height=400&width=400",
+      image: microfiber16x16main,
       href: "/products/microfiber-cloths/16x16-300gsm-12pack",
       badges: ["Premium", "Multi-Color"],
     },
@@ -39,19 +41,19 @@ export default function MicrofiberClothsPage() {
       price: "$19.99",
       packSize: "Pack of 12",
       colors: "Blue, Green, Yellow, Red, Purple, Pink, Orange, Black, White, and Gray",
-      image: "/placeholder.svg?height=400&width=400",
+      image: microfiber12x12main,
       href: "/products/microfiber-cloths/12x12-320gsm-12pack",
       badges: ["Professional", "High GSM"],
     },
     {
       id: 4,
-      name: 'EcoFine Microfiber Cloth - 12" x 12" - 320 GSM',
-      description: "Professional 320 GSM microfiber cloth with 4-thread overlock stitching",
+      name: 'EcoFine Microfiber Cloth - 12" x 12" - 300 GSM',
+      description: "Professional 300 GSM microfiber cloth with 4-thread overlock stitching",
       price: "$74.99",
       packSize: "Pack of 50",
       colors: "Blue, Green, Yellow, Red, Black, White, Gray",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-cloths/12x12-320gsm-50pack",
+      image: microfiber12x12_300main,
+      href: "/products/microfiber-cloths/12x12-300gsm-50pack",
       badges: ["Bulk", "Value Pack"],
     },
     {
@@ -67,17 +69,6 @@ export default function MicrofiberClothsPage() {
     },
     {
       id: 6,
-      name: 'EcoFine Microfiber Waffle Weave Towel - 16" x 16"',
-      description: "360 GSM waffle pattern for enhanced absorption",
-      price: "$14.98",
-      packSize: "Pack of 6",
-      colors: "Dark Blue, White, Gray",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-cloths/waffle-weave",
-      badges: ["Waffle Pattern", "Super Absorbent"],
-    },
-    {
-      id: 7,
       name: "EcoFine Microfiber Suede Lens Cleaning Cloth",
       description: "Ultra-soft suede microfiber for delicate surfaces",
       price: "$15.98",

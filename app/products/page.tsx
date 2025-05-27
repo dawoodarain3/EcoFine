@@ -5,7 +5,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import imageid2 from "../../public/EcoFine Microfiber Cloth/Microfiber 16x16-300gsm-50packs/Blue/Main.png"
 import glasscleaningclothmain from "../../public/Glass Cleaning Microfiber/Main.png"
-
+import microfiber12x12main from "../../public/EcoFine Microfiber Cloth/Microfiber 12X12 320GSM- 12packs/Black/Main.png"
+import microfiber12x12_8x8main from "../../public/Microfiber Suede Lens Cleaning Cloth 8x8/Gray/Main.png"
+import flatmop18 from "../../public/Mops/Microfiber Flat Mop Pads - 18/Blue/Main.png"
+import scrubbermops from "@/public/Mops/Microfiber Scrubber Mop Pad/18/Main.png"
+import handleframe from "@/public/Mops/Heavy Duty Frame Handle/01.png"
+import stringmop from "@/public/Mops/String Mop/Main.png"
 export default function ProductsPage() {
   const categories = [
     {
@@ -15,13 +20,15 @@ export default function ProductsPage() {
       products: [
         {
           id: 1,
-          name: 'Microfiber Suede Lens Cleaning Clot',
-          description: "Premium 300 GSM microfiber cloth with 4-thread overlock stitching",
-          price: "$24.99",
-          packSize: "Pack of 12",
-          image: "/placeholder.svg?height=300&width=300",
-          href: "/products/microfiber-cloths/16x16-300gsm-12pack",
-          badges: ["Premium", "Multi-Color"],
+          name: "EcoFine Microfiber Suede Lens Cleaning Cloth",
+          description: "Ultra-soft suede microfiber for delicate surfaces",
+          price: "$15.98",
+          packSize: "Pack of 10",
+          sizes: ['6" x 6"', '8" x 8"'],
+          colors: "White, Grey, Black",
+          image: microfiber12x12_8x8main,
+          href: "/products/microfiber-cloths/suede-lens",
+          badges: ["Suede", "Lens Cleaning"],
         },
         {
           id: 2,
@@ -39,7 +46,7 @@ export default function ProductsPage() {
           description: "Professional 320 GSM microfiber cloth with 4-thread overlock stitching",
           price: "$19.99",
           packSize: "Pack of 12",
-          image: "/placeholder.svg?height=300&width=300",
+          image: microfiber12x12main,
           href: "/products/microfiber-cloths/12x12-320gsm-12pack",
           badges: ["Professional", "High GSM"],
         },
@@ -52,17 +59,7 @@ export default function ProductsPage() {
           image: glasscleaningclothmain,
           href: "/products/microfiber-cloths/glass-cleaning",
           badges: ["Streak-Free", "Glass Specific"],
-        },
-        {
-          id: 5,
-          name: 'EcoFine Microfiber Waffle Weave Towel - 16" x 16"',
-          description: "360 GSM waffle pattern for enhanced absorption",
-          price: "$14.98",
-          packSize: "Pack of 6",
-          image: "/placeholder.svg?height=300&width=300",
-          href: "/products/microfiber-cloths/waffle-weave",
-          badges: ["Waffle Pattern", "Super Absorbent"],
-        },
+        }
       ],
     },
     {
@@ -72,23 +69,25 @@ export default function ProductsPage() {
       products: [
         {
           id: 6,
-          name: 'Microfiber Flat Mop Pads - 18" - Pack of 3',
-          description: "Professional-grade microfiber mop pads for efficient cleaning",
+          name: 'EcoFine Microfiber Flat Mop Pads - 18"',
+          description: "Professional-grade 475 GSM microfiber mop pads with longer loops for superior cleaning",
           price: "$29.98",
-          packSize: "Pack of 3",
-          image: "/placeholder.svg?height=300&width=300",
-          href: "/products/microfiber-mops/flat-mop-pads-18-3pack",
-          badges: ["Professional", "Color-Coded"],
+          packSize: "Pack of 3 & 6 available",
+          colors: "Blue, Red, Green, Yellow",
+          image: flatmop18, // or your imported image path
+          href: "/products/microfiber-mops/flat-mop-pads-18",
+          badges: ["Professional", "Color-Coded", "475 GSM"],
         },
         {
           id: 7,
-          name: 'Premium Microfiber Wet Mop Pads - 18" - Pack of 6',
-          description: "475 GSM microfiber mop pads with longer loops for superior cleaning",
-          price: "$64.98",
-          packSize: "Pack of 6",
-          image: "/placeholder.svg?height=300&width=300",
-          href: "/products/microfiber-mops/premium-wet-mop-pads-18-6pack",
-          badges: ["Premium", "High GSM"],
+          name: 'X-Large Microfiber String Mop',
+          description: "20 oz X-Large string mop equivalent to 32 oz cotton with superior absorption",
+          price: "$24.99",
+          packSize: "Each",
+          colors: ['Blue', 'White'],
+          image: stringmop,
+          href: "/products/microfiber-mops/x-large-string-mop",
+          badges: ["X-Large", "20 Ounce", "String Mop"],
         },
         {
           id: 8,
@@ -96,29 +95,19 @@ export default function ProductsPage() {
           description: "Aluminum frame with high-impact plastic and telescoping handle",
           price: "$19.98",
           packSize: "Each",
-          image: "/placeholder.svg?height=300&width=300",
+          image: handleframe,
           href: "/products/microfiber-mops/heavy-duty-frame-handle",
           badges: ["Hardware", "Durable"],
         },
         {
           id: 9,
-          name: '18" Microfiber Scrubber Mop',
+          name: 'Ecofiber Microfiber Scrubber Mop',
           description: "Dual-action mop with scrubbing strips for tough cleaning jobs",
           price: "$14.98",
           packSize: "Each",
-          image: "/placeholder.svg?height=300&width=300",
+          image: scrubbermops,
           href: "/products/microfiber-mops/scrubber-mop",
           badges: ["Scrubbing", "Dual-Action"],
-        },
-        {
-          id: 10,
-          name: '18" Microfiber Mop System',
-          description: "Complete mop system with telescoping handle, frame, and pads",
-          price: "$49.98",
-          packSize: "Set",
-          image: "/placeholder.svg?height=300&width=300",
-          href: "/products/microfiber-mops/mop-system",
-          badges: ["Complete System", "Professional"],
         },
       ],
     },
