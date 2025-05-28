@@ -11,7 +11,6 @@ import ecofriendlymain from "@/public/EcoFine Microfiber Cloth/EcoFine Microfibe
 import microfiber12x12_8x8main from "@/public/Microfiber Suede Lens Cleaning Cloth 8x8/Gray/Main.png"
 import globalimage from "@/public/Mops/Heavy Duty Frame Handle/01.png"
 import xlargeimage from "@/public/Mops/String Mop/Main.png"
-import flatmop18 from "@/public/Mops/Microfiber Flat Mop Pads - 18/Blue/Main.png"
 import scrubbermops from "@/public/Mops/Microfiber Scrubber Mop Pad/18/Main.png"
 import glasscleaningclothmain from "@/public/Glass Cleaning Microfiber/Main.png"
 
