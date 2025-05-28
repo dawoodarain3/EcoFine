@@ -8,10 +8,12 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { HeroSection } from "@/components/hero-section"
 import { SDGSection } from "@/components/sdg-section"
 import ecofriendlymain from "@/public/EcoFine Microfiber Cloth/EcoFine Microfiber Cloth - 16 x 16/Blue/Main.png"
+import microfiber12x12_8x8main from "@/public/Microfiber Suede Lens Cleaning Cloth 8x8/Gray/Main.png"
 import globalimage from "@/public/Mops/Heavy Duty Frame Handle/01.png"
 import xlargeimage from "@/public/Mops/String Mop/Main.png"
-import handleframe from "@/public/Mops/Heavy Duty Frame Handle/01.png"
 import flatmop18 from "@/public/Mops/Microfiber Flat Mop Pads - 18/Blue/Main.png"
+import scrubbermops from "@/public/Mops/Microfiber Scrubber Mop Pad/18/Main.png"
+import glasscleaningclothmain from "@/public/Glass Cleaning Microfiber/Main.png"
 
 export default function Home() {
   return (
@@ -134,7 +136,7 @@ export default function Home() {
   <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
     <CardHeader className="pb-2 relative">
       <Image
-        src={ecofriendlymain}
+        src={microfiber12x12_8x8main}
         alt="Product"
         width={300}
         height={200}
@@ -142,7 +144,7 @@ export default function Home() {
       />
       <div className="absolute top-2 right-2 flex flex-wrap gap-1">
         <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
-          Bulk
+          Lens Cleaning
         </div>
         <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
           Value Pack
@@ -150,13 +152,13 @@ export default function Home() {
       </div>
     </CardHeader>
     <CardContent className="space-y-1.5">
-      <CardTitle className="text-lg">EcoFine Microfiber Cloth - 16" x 16" - 300 GSM</CardTitle>
-      <p className="text-sm text-gray-500">Premium 300 GSM microfiber cloth with 4-thread overlock stitching</p>
-      <p className="text-sm font-medium">$89.99 - Pack of 50</p>
+      <CardTitle className="text-lg">EcoFine Microfiber Suede Lens Cleaning Cloth</CardTitle>
+      <p className="text-sm text-gray-500">Ultra-soft suede microfiber for delicate surfaces</p>
+      <p className="text-sm font-medium">$15.98 - Pack of 10</p>
     </CardContent>
     <div className="p-4 flex justify-between items-center">
       <Button asChild variant="link" className="text-sm font-medium">
-        <Link href="/products/microfiber-cloths/16x16-300gsm-50pack">Learn More</Link>
+        <Link href="/products/microfiber-cloths/suede-lens">Learn More</Link>
       </Button>
     </div>
   </Card>
@@ -194,7 +196,7 @@ export default function Home() {
   <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
     <CardHeader className="pb-2 relative">
       <Image
-        src={handleframe}
+        src={scrubbermops}
         alt="Product"
         width={300}
         height={200}
@@ -210,13 +212,13 @@ export default function Home() {
       </div>
     </CardHeader>
     <CardContent className="space-y-1.5">
-      <CardTitle className="text-lg">18" Heavy Duty Frame & Handle</CardTitle>
-      <p className="text-sm text-gray-500">Aluminum frame with high-impact plastic and telescoping handle</p>
-      <p className="text-sm font-medium">$19.98 - Each</p>
+      <CardTitle className="text-lg">Ecofiber Microfiber Scrubber Mop</CardTitle>
+      <p className="text-sm text-gray-500">Dual-action mop with scrubbing strips for tough cleaning jobs</p>
+      <p className="text-sm font-medium">$14.98 - Each</p>
     </CardContent>
     <div className="p-4 flex justify-between items-center">
       <Button asChild variant="link" className="text-sm font-medium">
-        <Link href="/products/microfiber-mops/heavy-duty-frame-handle">Learn More</Link>
+        <Link href="/products/microfiber-mops/scrubber-mop">Learn More</Link>
       </Button>
     </div>
   </Card>
@@ -224,7 +226,7 @@ export default function Home() {
   <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
     <CardHeader className="pb-2 relative">
       <Image
-        src={flatmop18}
+        src={glasscleaningclothmain}
         alt="Product"
         width={300}
         height={200}
@@ -240,14 +242,13 @@ export default function Home() {
       </div>
     </CardHeader>
     <CardContent className="space-y-1.5">
-      <CardTitle className="text-lg">EcoFine Microfiber Flat Mop Pads - 18"</CardTitle>
-      <p className="text-sm text-gray-500">Professional-grade 475 GSM microfiber mop pads with longer loops for superior cleaning</p>
-      <p className="text-sm font-medium">$29.98 - Pack of 3 & 6 available</p>
-      <p className="text-xs text-gray-400">Colors: Blue, Red, Green, Yellow</p>
+      <CardTitle className="text-lg">EcoFine Microfiber Glass Cleaning Cloth - 16" x 16</CardTitle>
+      <p className="text-sm text-gray-500">Specialized cloth for streak-free glass cleaning</p>
+      <p className="text-sm font-medium">$12.99 - Pack of 6</p>
     </CardContent>
     <div className="p-4 flex justify-between items-center">
       <Button asChild variant="link" className="text-sm font-medium">
-        <Link href="/products/microfiber-mops/flat-mop-pads-18">Learn More</Link>
+        <Link href="/products/microfiber-cloths/glass-cleaning">Learn More</Link>
       </Button>
     </div>
   </Card>
