@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-
+import logo from "@/public/logogreen.jpeg"
 export function Footer() {
   return (
     <footer className="w-full border-t bg-white">
@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col gap-2">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="/placeholder.svg?height=40&width=40"
+                src={logo}
                 alt="EcoFine Products Logo"
                 width={40}
                 height={40}

@@ -9,6 +9,10 @@ import { HeroSection } from "@/components/hero-section"
 import { SDGSection } from "@/components/sdg-section"
 import ecofriendlymain from "@/public/EcoFine Microfiber Cloth/EcoFine Microfiber Cloth - 16 x 16/Blue/Main.png"
 import globalimage from "@/public/Mops/Heavy Duty Frame Handle/01.png"
+import xlargeimage from "@/public/Mops/String Mop/Main.png"
+import handleframe from "@/public/Mops/Heavy Duty Frame Handle/01.png"
+import flatmop18 from "@/public/Mops/Microfiber Flat Mop Pads - 18/Blue/Main.png"
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -127,113 +131,127 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-12">
-            <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
-              <CardHeader className="pb-2 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Product"
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover aspect-video"
-                />
-                <div className="absolute top-2 right-2 flex space-x-1">
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    12
-                  </div>
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    6
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-1.5">
-                <CardTitle className="text-lg">EcoFine Pro Multi-Surface Microfiber Cloth</CardTitle>
-                <p className="text-sm text-gray-500">12"x12" Professional cleaning cloth</p>
-              </CardContent>
-              <div className="p-4 flex justify-between items-center">
-                <Button asChild variant="link" className="text-sm font-medium">
-                  <Link href="/products/microfiber-cloths/pro-multi-surface">Learn More</Link>
-                </Button>
-              </div>
-            </Card>
-            <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
-              <CardHeader className="pb-2 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Product"
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover aspect-video"
-                />
-                <div className="absolute top-2 right-2 flex space-x-1">
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    3
-                  </div>
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    13
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-1.5">
-                <CardTitle className="text-lg">EcoFine Premium Microfiber Wet Mop Pads</CardTitle>
-                <p className="text-sm text-gray-500">10" Wet mop pads, pack of 3</p>
-              </CardContent>
-              <div className="p-4 flex justify-between items-center">
-                <Button asChild variant="link" className="text-sm font-medium">
-                  <Link href="/products/microfiber-mops/premium-wet-mop-pads">Learn More</Link>
-                </Button>
-              </div>
-            </Card>
-            <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
-              <CardHeader className="pb-2 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Product"
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover aspect-video"
-                />
-                <div className="absolute top-2 right-2 flex space-x-1">
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    12
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-1.5">
-                <CardTitle className="text-lg">EcoFine™ Detail 400 GSM Microfiber Towel</CardTitle>
-                <p className="text-sm text-gray-500">16"x16" Professional detailing towel</p>
-              </CardContent>
-              <div className="p-4 flex justify-between items-center">
-                <Button asChild variant="link" className="text-sm font-medium">
-                  <Link href="/products/car-care/detail-400-gsm">Learn More</Link>
-                </Button>
-              </div>
-            </Card>
-            <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
-              <CardHeader className="pb-2 relative">
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Product"
-                  width={300}
-                  height={200}
-                  className="rounded-md object-cover aspect-video"
-                />
-                <div className="absolute top-2 right-2 flex space-x-1">
-                  <div className="h-6 w-6 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold">
-                    15
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-1.5">
-                <CardTitle className="text-lg">EcoFine™ Home Microfiber Scrubber Dish Cloth</CardTitle>
-                <p className="text-sm text-gray-500">10"x10" 2-in-1 scrubber and cloth</p>
-              </CardContent>
-              <div className="p-4 flex justify-between items-center">
-                <Button asChild variant="link" className="text-sm font-medium">
-                  <Link href="/products/home-kitchen/scrubber-dish-cloth">Learn More</Link>
-                </Button>
-              </div>
-            </Card>
-          </div>
+  <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <CardHeader className="pb-2 relative">
+      <Image
+        src={ecofriendlymain}
+        alt="Product"
+        width={300}
+        height={200}
+        className="rounded-md object-cover aspect-video"
+      />
+      <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          Bulk
+        </div>
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          Value Pack
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent className="space-y-1.5">
+      <CardTitle className="text-lg">EcoFine Microfiber Cloth - 16" x 16" - 300 GSM</CardTitle>
+      <p className="text-sm text-gray-500">Premium 300 GSM microfiber cloth with 4-thread overlock stitching</p>
+      <p className="text-sm font-medium">$89.99 - Pack of 50</p>
+    </CardContent>
+    <div className="p-4 flex justify-between items-center">
+      <Button asChild variant="link" className="text-sm font-medium">
+        <Link href="/products/microfiber-cloths/16x16-300gsm-50pack">Learn More</Link>
+      </Button>
+    </div>
+  </Card>
+
+  <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <CardHeader className="pb-2 relative">
+      <Image
+        src={xlargeimage}
+        alt="Product"
+        width={300}
+        height={200}
+        className="rounded-md object-cover aspect-video"
+      />
+      <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          X-Large
+        </div>
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          String Mop
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent className="space-y-1.5">
+      <CardTitle className="text-lg">X-Large Microfiber String Mop</CardTitle>
+      <p className="text-sm text-gray-500">20 oz X-Large string mop equivalent to 32 oz cotton with superior absorption</p>
+      <p className="text-sm font-medium">$24.99 - Each</p>
+    </CardContent>
+    <div className="p-4 flex justify-between items-center">
+      <Button asChild variant="link" className="text-sm font-medium">
+        <Link href="/products/microfiber-mops/x-large-string-mop">Learn More</Link>
+      </Button>
+    </div>
+  </Card>
+
+  <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <CardHeader className="pb-2 relative">
+      <Image
+        src={handleframe}
+        alt="Product"
+        width={300}
+        height={200}
+        className="rounded-md object-cover aspect-video"
+      />
+      <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          Hardware
+        </div>
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          Durable
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent className="space-y-1.5">
+      <CardTitle className="text-lg">18" Heavy Duty Frame & Handle</CardTitle>
+      <p className="text-sm text-gray-500">Aluminum frame with high-impact plastic and telescoping handle</p>
+      <p className="text-sm font-medium">$19.98 - Each</p>
+    </CardContent>
+    <div className="p-4 flex justify-between items-center">
+      <Button asChild variant="link" className="text-sm font-medium">
+        <Link href="/products/microfiber-mops/heavy-duty-frame-handle">Learn More</Link>
+      </Button>
+    </div>
+  </Card>
+
+  <Card className="bg-white border-0 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <CardHeader className="pb-2 relative">
+      <Image
+        src={flatmop18}
+        alt="Product"
+        width={300}
+        height={200}
+        className="rounded-md object-cover aspect-video"
+      />
+      <div className="absolute top-2 right-2 flex flex-wrap gap-1">
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          Professional
+        </div>
+        <div className="px-2 py-1 rounded-full bg-green-600 flex items-center justify-center text-white text-xs font-bold whitespace-nowrap">
+          475 GSM
+        </div>
+      </div>
+    </CardHeader>
+    <CardContent className="space-y-1.5">
+      <CardTitle className="text-lg">EcoFine Microfiber Flat Mop Pads - 18"</CardTitle>
+      <p className="text-sm text-gray-500">Professional-grade 475 GSM microfiber mop pads with longer loops for superior cleaning</p>
+      <p className="text-sm font-medium">$29.98 - Pack of 3 & 6 available</p>
+      <p className="text-xs text-gray-400">Colors: Blue, Red, Green, Yellow</p>
+    </CardContent>
+    <div className="p-4 flex justify-between items-center">
+      <Button asChild variant="link" className="text-sm font-medium">
+        <Link href="/products/microfiber-mops/flat-mop-pads-18">Learn More</Link>
+      </Button>
+    </div>
+  </Card>
+</div>
           <div className="text-center mt-8">
             <Button asChild className="bg-green-600 hover:bg-green-700">
               <Link href="/products">View All Products</Link>
