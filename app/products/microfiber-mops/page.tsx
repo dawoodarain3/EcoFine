@@ -10,6 +10,9 @@ import HeavyDutyFrameMain from "../../../public/Mops/Heavy Duty Frame Handle/01.
 import scrubbermopmain from "@/public/Mops/Microfiber Scrubber Mop Pad/18/Main.png"
 import commercialtubemop from "@/public/Mops/Commercial Tube Mop/Blue/Main.png"
 import stringmop from "@/public/Mops/String Mop/Main.png"
+import largeSyntheticMop from "@/public/Mops/Large Synthetic Wet Mops/Main.png"
+import largeAntimicrobialMop from "@/public/Mops/Large Antimicrobial Synthetic Wet Mop/Main.png"
+
 export default function MicrofiberMopsPage() {
   const products = [
     {
@@ -76,7 +79,31 @@ export default function MicrofiberMopsPage() {
       image: commercialtubemop,
       href: "/products/microfiber-mops/commercial-tube-mop",
       badges: ["Commercial", "Mesh Headband"],
+    },
+    {
+      id: 7,
+      name: 'Large Synthetic Wet Mop',
+      description: "24 oz. wet mop with 100% synthetic yarn and 5” vinyl-coated mesh headband",
+      price: "$34.99", // Replace with actual price
+      packSize: "Single Mop", // You can change this if sold in bulk
+      colors: ['White', 'Blue', 'Green', 'Red'],
+      image: largeSyntheticMop, // Replace with actual image import/variable
+      href: "/products//microfiber-mops/large-synthetic-wet-mops",
+      badges: ["Large 24 oz.", "Vinyl-Coated Mesh", "Synthetic Yarn"],
+    },
+    {
+      id: 8,
+      name: 'Large Antimicrobial Synthetic Wet Mop',
+      description: "24 oz. large synthetic wet mop with 9” polyester headband, double tailbands, and looped-end yarn for commercial use",
+      price: "$42.99", // Replace with actual price
+      packSize: "Single Mop", // Update if sold in bulk
+      colors: ['Green'],
+      image: largeAntimicrobialMop, // Replace with actual image import/variable
+      href: "/products/microfiber-mops/large-antimicrobial-synthetic-wet-mop",
+      badges: ["Antimicrobial", "Machine Washable", "Commercial Grade"],
     }
+    
+    
   ]
 
   return (

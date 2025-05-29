@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronRight } from "lucide-react"
 import { Check } from "lucide-react"
+import black10x10main from "@/public/Microfiber Suede Lens Cleaning Cloth/White/Main.png"
+import black14x14main from "@/public/Microfiber Suede Lens Cleaning Cloth/Gray/Main.png"
 
 export default function MicrofiberDustersPage() {
   const products = [
@@ -13,27 +15,27 @@ export default function MicrofiberDustersPage() {
       description: '10"x10" ultra-soft suede microfiber for delicate surfaces',
       price: "$15.98",
       packSize: "Pack of 10",
-      image: "/placeholder.svg?height=400&width=400",
+      image: black10x10main,
       href: "/products/microfiber-dusters/suede-lens-cloth",
       badges: ["Suede", "Lens Cleaning"],
     },
-    {
-      id: 2,
-      name: "EcoFine Microfiber Silk Lens Cloth",
-      description: '10"x10" premium silk microfiber for optical surfaces',
-      price: "$13.98",
-      packSize: "Pack of 10",
-      image: "/placeholder.svg?height=400&width=400",
-      href: "/products/microfiber-dusters/silk-lens-cloth",
-      badges: ["Silk", "Premium"],
-    },
+    // {
+    //   id: 2,
+    //   name: "EcoFine Microfiber Silk Lens Cloth",
+    //   description: '10"x10" premium silk microfiber for optical surfaces',
+    //   price: "$13.98",
+    //   packSize: "Pack of 10",
+    //   image: "/placeholder.svg?height=400&width=400",
+    //   href: "/products/microfiber-dusters/silk-lens-cloth",
+    //   badges: ["Silk", "Premium"],
+    // },
     {
       id: 3,
       name: "EcoFine Microfiber Suede Screen Cleaning Cloth",
       description: '14"x14" large format cloth for screens and monitors',
       price: "$7.98",
       packSize: "Pack of 3",
-      image: "/placeholder.svg?height=400&width=400",
+      image: black14x14main,
       href: "/products/microfiber-dusters/screen-cloth",
       badges: ["Screen Cleaning", "Large Format"],
     },
